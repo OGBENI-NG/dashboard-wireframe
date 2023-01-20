@@ -1,0 +1,356 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #FFFFFf;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+main, 
+.wealther-crypto-container, 
+.weather-icon-con, .crpto-con, 
+.img-container, .price-con, 
+.main-container, .todo-con {
+    display: flex;
+
+}
+
+main {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 2em;
+}
+
+.wealther-crypto-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clock {
+    width: 170px;
+    height: 170px;
+    object-fit: fill;
+    background-image: url('img/clock.png');
+    background-position: center;
+    background-size: cover;
+    align-self: center;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+
+.hours, .minutes, .seconds, .dot {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.hours, .minutes, .seconds {
+    transform-origin: 66% 99%;
+    width: 4px;
+    border-top: 15px solid #51ff0d;
+    background: #000000;
+    border-radius: 40%;
+}
+
+
+.hours {
+    height: 48px;
+    bottom: 24%;
+   
+}
+
+.minutes {
+    height: 73px;
+    bottom: 43%;
+}
+
+.seconds {
+    
+    bottom: 47%;
+    width: 3px;
+    height: 80px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background: #01161e;
+    border-radius: 10px;
+}
+
+.main-container {
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #c9c9c9;
+    
+}
+
+.img-container {
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.crpto-con {
+    display: block;
+    text-shadow: none;
+    width: 300px;
+    padding: 0 1em;
+    align-items: center;
+}
+.crpto-con:last-child {
+    padding-bottom: .5em;
+}
+
+.crpto {
+    background-color: #efefef;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px #000000;
+    
+   
+}
+
+.btc {
+    font-weight: 700;
+    color: #01161e;
+    font-size: 1.1rem;
+    margin-left: .5em;
+}
+
+.btc span {
+    font-weight: 700;
+    font-size: .8rem;
+    display: block;
+    color: #757c82;
+}
+
+.price-con {
+    margin:0 0 0 auto;
+    color: #01161e;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
+    gap: .2em;
+}
+
+.price {
+    color: #01161ea6;
+    font-weight: 700;
+    font-size: .8rem;
+    align-self: flex-start;
+}
+
+.weather-icon-con {
+    align-items: center;
+    margin-top: -8em;
+}
+
+.weather-name {
+    margin-top: -1.5em;
+    margin-left: 1.5em;
+    width: auto;
+}
+
+div.weather-icon-con > span{
+    margin-left: -.77em;
+}
+
+/* todo section */
+
+.myTodoHeader {
+    padding: 30px 40px;
+    background-color: #A626D3;
+    text-align: center;
+    color: white;
+    border-top-left-radius: 10px;
+}
+
+.myTodoHeader:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+
+.todo-container {
+    background-color: #000000;
+    position: absolute;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 10;
+    width: 400px;
+    bottom: 0;
+    margin:0 0 0 auto;
+    height: max-content;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+h2 {
+    margin: 5px;
+}
+
+.input-con {
+    display: flex;
+    
+}
+
+input {
+    width: 75%;
+    margin: 0;
+    border-radius: 4px 0px 0px 4px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #F2EBE9;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #01161e;
+}
+          
+
+.addBtn {
+    text-transform: uppercase;
+    border: none;
+    width: 25%;
+    background-color: #22577a;
+    color: #F2EBE9;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 0px 4px 4px 0px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.addBtn:active {
+    background-color: #757c82;
+    transform: translateX(3px)
+}
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+/* style the list */
+ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.2s;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #1A3C40;
+  color: #F2EBE9;
+}
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background-color: #092A35;
+}
+/* Darker background-color on hover */
+ul li:hover {
+    background-color: #AAD1B6;
+    color: #FBF3AB;
+}
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background-color: #755a5a;
+    color: #2AAF74;
+    text-decoration: line-through;
+}
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: "✔";
+    position: absolute;
+    left: 12px;
+    margin-top: -3px;
+    color: #2AAF74;
+   
+   
+}
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    padding: 0 .5em;
+    color: #ff758f;
+}
+
+.close:hover {
+    color: red;
+
+}
+
+.close-todo {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: .5em;
+    color: tomato;
+    background-color: #023047;
+    border: none;
+    text-shadow: 2px 2px 2px #000000;
+    cursor: pointer;
+}
+
+.close-todo:hover {
+    color: red;
+    
+}
+
+.todo-con {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo {
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.todo:hover {
+    color: #A626D3;
+}
+
+.overlay {
+    display: none;
+    transition: 3s;
+}
+
+
+
+

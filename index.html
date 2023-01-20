@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Dashboard</title>
+</head>
+<body>
+    <main>
+        <div class="wealther-crypto-container">
+            <div class="crpto">
+            </div>
+            <div class="weather-con">
+                
+            </div>
+            
+        </div>
+        <div class="clock">
+            <div class="hours"></div>
+            <div class="minutes"></div>
+            <div class="seconds"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="todo-con">
+            <p id="autor"></p>
+            <span class="todo">Todo App</span>
+        </div>
+        
+    </main>
+    <section>
+        <div class="overlay">
+            <div class="todo-container">
+                <div class="myTodoHeader" id="myTodo">
+                    <h2 class="msg">My Todo App</h2>
+                    <div class="input-con">
+                        <input type="text" id="todoInput" placeholder="Type here...">
+                        <button class="addBtn">save</button>
+                    </div>
+                </div>
+                <ul id="todoUl">
+                </ul>
+                <button class="close-todo">🗙 Close Todo 🗙</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
